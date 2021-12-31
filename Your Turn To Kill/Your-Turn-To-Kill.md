@@ -63,7 +63,7 @@ This is a very intersting problem, so I also calculate the successful probabilit
 
 ![successful possibilities](https://github.com/Albert-Aiqi-Zhang/Blogs/blob/main/Your%20Turn%20To%20Kill/images/successfulPossibilities.jpg)
 
-Here in this figure, I find that the successful possibility converges to a constant number, 36.8%. This cannot be a coincidence. Maybe I will write another blog to explain the series in the future.
+Here in this figure, I find that the successful possibility converges to a constant number, 36.8%. This cannot be a coincidence. Maybe I will write another blog to explain the phenomenon in the future.
 
 Hope you enjoy this blog!
 
