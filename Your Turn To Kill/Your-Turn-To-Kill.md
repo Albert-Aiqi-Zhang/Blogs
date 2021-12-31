@@ -59,7 +59,9 @@ In this way, we can find the true successful possibility is 36.8%, exactly the s
 
 ## Other numbers?
 
-This is a very intersting problem
+This is a very intersting problem, so I also calculate the successful probability for other numbers in different_num.py.
+
+
 
 
 
