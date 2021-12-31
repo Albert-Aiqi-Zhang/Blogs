@@ -23,14 +23,30 @@ In the program probalisitic_approach.py, I complete a loop of 500,000 turns, and
 
 This first method is somewhat confusing, because we can directly calculate the possiblity with some more "mathematical" methods. Actually, we can start with some small numbers.
 
+### (i) The idea
 For example, we can start with only 1 person. He/She writes down who he/she hates, and he/she has to draw their own sheet. That is, one person cannot complete the
 "exchange" murder game. (Of course not!)
 
 Then we come up with 2 persons. We can give them IDs, e.g., 1 and 2. So 1 writes down someone 1 hates, and 2 writes down someone 2 hates, then they exchange with each other. For simplicity, here the we name victims with 1 and 2 as well. So here we have 2 different events: 1, 2 and 2, 1. This is a simple permutation problem. So obviously, there is only 1 way for the "exchange", i.e., 2, 1. So the successful possibility is 50%.
 
-We can do the same thing for 3 people (1, 2 and 3). There are 3! = 6 ways in total, but here only two ways can work.
-'''math (2, 3, 1), (3, 1, 2)'''
+We can do the same thing for 3 people (1, 2 and 3). There are 3! = 6 ways in total, but here only two ways can work: (2, 3, 1), (3, 1, 2), so the successful possibility is 1/3, or 33.3%.
 
-![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a})
+It is very tough to calculate the result by hand, but the computer can help us a lot. Actually, we can derive the recurrence relation of the possibility. Here we need two variables: successful ways (f(n)) and successful possibility (P(n)).
+
+### (ii) Recurrence relation for successful ways
+
+In the program deterministic_approach.py, I introduce the successfulWays f(n), where n is the total number. This is a critical intermidiate variable, with which we can easily calculate the successful possibility. For example, in (i) The idea, I have calculated successful ways for n = 1, 2 and 3. That is,  
+f(1) = 0,  f(2) = 1,  f(3) = 2.  
+For any large number n (n >= 3), we can find the following recurrence relation:   
+f(n) = n! - C(n, n) - C(n, n - 1) * f(n - 1) - C(n, n - 2) * f(n - 2) - ... - C(n, 2) * f(2).   
+Here C(n, k) is the combinatorial number, which can be calculated by:
+![\Large C(n,k)=\frac{n!}{k!(n-k)!](https://latex.codecogs.com/svg.latex?\Large&space;C(n,k)=\frac{n!}{k!(n-k)!})
+
+
+
+
+
+
+![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{b\pm\sqrt{b^2-4ac}}{2a})
 
 
