@@ -55,6 +55,12 @@ It is very easy for us to calculate the successful possibility P(n) with the f(n
 
 ![\Large C(n,k)=\frac{n!}{k!(n-k)!](https://latex.codecogs.com/svg.latex?\Large&space;P(n)=\frac{f(n)}{n!})
 
+In this way, we can find the true successful possibility is 36.8%, exactly the same as the solution in Approach 1. It means someone may quit the game from the beginning.
+
+## Other numbers?
+
+This is a very intersting problem
+
 
 
 
