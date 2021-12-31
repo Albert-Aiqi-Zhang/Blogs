@@ -43,7 +43,7 @@ For any large number n (n >= 3), we can find the following recurrence relation:
 Here C(n, k) is the combinatorial number, which can be calculated by:  
 ![\Large C(n,k)=\frac{n!}{k!(n-k)!](https://latex.codecogs.com/svg.latex?\Large&space;C(n,k)=\frac{n!}{k!(n-k)!})
 
-The reason for the relation is as follows: The successful ways f(n) for a total number of n means no one draws their own sheet. How can we know the value of f(n)? It can be calculated by substracting all duplicate ways from the total ways n!. Just one duplicate means one out of n (C(n, n - 1)) draws his own sheet, and the left (n - 1) people have their successful ways, so this leads to C(n, n - 1) * f(n - 1)
+The reason for the relation is as follows: The successful ways f(n) for a total number of n means no one draws their own sheet. How can we know the value of f(n)? It can be calculated by substracting all duplicate ways from the total ways n!. Just one duplicate means one out of n (C(n, n - 1)) draws his own sheet, and the left (n - 1) people have their successful ways, so this leads to C(n, n - 1) * f(n - 1) ways. For the same reason, we need to consider just two duplicates, i.e., C(n, n - 2) * f(n - 2) ways. We continue the idea, all the way to (n - 2) duplicates. Mention that we cannot have just (n - 1) duplicates, because the remaining one must get his own sheet. And don't forget that the possibility that all of them get their own, i.e., C(n, 0). We can finally get the relation.
 
 The later f(n) depends on the former f(i) (i = 2, 3, ..., n - 1), which indicates dynamic programming can lend itself very well to this problem.
 
