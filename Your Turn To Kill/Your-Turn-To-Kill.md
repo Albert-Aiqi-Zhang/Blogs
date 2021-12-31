@@ -39,7 +39,7 @@ In the program deterministic_approach.py, I introduce the successfulWays f(n), w
 f(1) = 0,  f(2) = 1,  f(3) = 2.  
 For any large number n (n >= 3), we can find the following recurrence relation:   
 f(n) = n! - C(n, n) - C(n, n - 1) * f(n - 1) - C(n, n - 2) * f(n - 2) - ... - C(n, 2) * f(2). 
-![\Large C(n,k)=\frac{n!}{k!(n-k)!](https://latex.codecogs.com/svg.latex?\Large&space;f(n)=n!-C(n,n)-C(n,n-1)*f(n-1)-C(n,n-2)*f(n-2)-...-C(n,2)*f(2)})
+![\Large C(n,k)=\frac{n!}{k!(n-k)!](https://latex.codecogs.com/svg.latex?\Large&space;f(n)=n!-C(n,n)-C(n,n-1)*f(n-1)-C(n,n-2)*f(n-2)-...-C(n,2)*f(2))
 Here C(n, k) is the combinatorial number, which can be calculated by:  
 ![\Large C(n,k)=\frac{n!}{k!(n-k)!](https://latex.codecogs.com/svg.latex?\Large&space;C(n,k)=\frac{n!}{k!(n-k)!})
 
