@@ -38,7 +38,7 @@ It is very tough to calculate the result by hand, but the computer can help us a
 In the program deterministic_approach.py, I introduce the successfulWays f(n), where n is the total number. This is a critical intermidiate variable, with which we can easily calculate the successful possibility. For example, in (i) The idea, I have calculated successful ways for n = 1, 2 and 3. That is,  
 f(1) = 0,  f(2) = 1,  f(3) = 2.  
 For any large number n (n >= 3), we can find the following recurrence relation:    
-![\Large C(n,k)=\frac{n!}{k!(n-k)!](https://latex.codecogs.com/svg.latex?\Large&space;f(n)=n!-C(n,n)-C(n,n-1)*f(n-1)-C(n,n-2)*f(n-2)-...-C(n,2)*f(2)).   
+![\Large C(n,k)=\frac{n!}{k!(n-k)!](https://latex.codecogs.com/svg.latex?\Large;f(n)=n!-C(n,n)-C(n,n-1)*f(n-1)-C(n,n-2)*f(n-2)-...-C(n,2)*f(2)).   
 Here C(n, k) is the combinatorial number, which can be calculated by:  
 ![\Large C(n,k)=\frac{n!}{k!(n-k)!](https://latex.codecogs.com/svg.latex?\Large&space;C(n,k)=\frac{n!}{k!(n-k)!})
 
