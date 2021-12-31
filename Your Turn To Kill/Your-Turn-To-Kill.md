@@ -4,7 +4,7 @@ Recently I have watched a Japanese TV show あなたの番です (Your Turn to K
 an apartment complex joined the exchange murder game, writing down the person who he/she wants to kill in a sheet, and draw others' sheet in random.
 The resident will murder who he/she draws. A serial murder happens then.  
 
-(insert a picture here)
+![TV show](https://github.com/Albert-Aiqi-Zhang/Blogs/blob/main/Your%20Turn%20To%20Kill/images/TVshow.jpeg)
 
 The TV show is too interesting for me to mention some bugs. In an episode, a resident, Miss Kuroshima (黒島ちゃん) pointed out that this game may be a failure because
 someone may draw their own sheet. In other words, it is possible that at least one person cannot actually participate in this game by killing someone else's target.
@@ -59,13 +59,12 @@ In this way, we can find the true successful possibility is 36.8%, exactly the s
 
 ## Other numbers?
 
-This is a very intersting problem, so I also calculate the successful probability for other numbers in different_num.py.
+This is a very intersting problem, so I also calculate the successful probability for other numbers up to 20 in different_num.py.
 
+![successful possibilities](https://github.com/Albert-Aiqi-Zhang/Blogs/blob/main/Your%20Turn%20To%20Kill/images/successfulPossibilities.jpg)
 
+Here in this figure, I find that the successful possibility converges to a constant number, 36.8%. This cannot be a coincidence. Maybe I will write another blog to explain the series in the future.
 
-
-
-
-![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{b\pm\sqrt{b^2-4ac}}{2a})
+Hope you enjoy this blog!
 
 
