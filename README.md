@@ -1,2 +1,2 @@
 # Blogs
-This blogs record some interesting things and interesting program in my daily life.
+This blogs record some interesting things and interesting programs in my daily life.
